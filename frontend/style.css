@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #fff7ed, #fef3c7);
+  color: #111;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 140px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+h1 span {
+  color: #f59e0b;
+}
+
+.subtitle {
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 25px;
+  line-height: 1.6;
+}
+
+.badge {
+  display: inline-block;
+  background: #f59e0b;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.launch-date {
+  margin: 12px 0 30px;
+  color: #555;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 45px;
+}
+
+.countdown div {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 18px 22px;
+  border-radius: 14px;
+  min-width: 90px;
+}
+
+.countdown span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.subscribe-box {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.subscribe-box h2 {
+  margin-bottom: 10px;
+}
+
+.subscribe-box p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+input {
+  padding: 14px 16px;
+  width: 280px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+button {
+  padding: 14px 28px;
+  border-radius: 10px;
+  border: none;
+  background: #f59e0b;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.message {
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+footer {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.disclaimer {
+  margin-top: 6px;
+}
