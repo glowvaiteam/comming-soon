@@ -29,7 +29,7 @@ const form = document.getElementById("subscribeForm");
 const message = document.getElementById("message");
 
 // 🔴 CHANGE THIS AFTER DEPLOYMENT
-const BACKEND_URL = "https://comming-soon-l4w1.onrender.com";
+const BACKEND_URL = "https://backend-vz8e.onrender.com";
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
