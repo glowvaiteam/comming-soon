@@ -79,11 +79,12 @@ document.getElementById("subscribeForm").addEventListener("submit", function (e)
 
 I would like to request early access to GLOWVAI.
 
-User Email:
+Your Email:
 ${userEmail}
 
 Thank you,
-${userEmail}`;
+[Your Name]`;
+
 
   const mailtoLink = `mailto:${companyEmail}?subject=${encodeURIComponent(
     subject
