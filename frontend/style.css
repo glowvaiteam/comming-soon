@@ -181,3 +181,42 @@ footer {
   .countdown div { min-width: 66px; padding: 14px; }
   input { width: 100%; max-width: 320px; }
 }
+
+
+
+.logo-heading {
+  font-family: 'Cinzel', serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  margin-bottom: 30px;
+  color: #d4af37;
+  text-align: center;
+}
+
+.logo-heading .sub-line {
+  display: block;
+  color: #d4af37; /* gold */
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+
+/* Disable text selection for logo & hero */
+.logo-heading,
+h1 , h2  {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 480px) {
+  .logo-heading {
+    font-size: 2.1rem;      /* slightly smaller */
+    letter-spacing: 0.12em; /* tighter spacing */
+    margin-bottom: 22px;
+  }
+}
