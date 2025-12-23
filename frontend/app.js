@@ -24,40 +24,7 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
-// 🔹 Email form → Backend
-const form = document.getElementById("subscribeForm");
-const message = document.getElementById("message");
 
-// 🔴 CHANGE THIS AFTER DEPLOYMENT
-const BACKEND_URL = "https://backend-vz8e.onrender.com";
-
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  const email = document.getElementById("email").value;
-  message.textContent = "⏳ Sending...";
-  message.style.color = "#d4af37";
-
-  try {
-    const res = await fetch(`${BACKEND_URL}/subscribe`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email })
-    });
-
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.error);
-
-    message.textContent = "✅ Thanks! We’ll notify you at launch.";
-    message.style.color = "#16a34a";
-    form.reset();
-
-  } catch (err) {
-    console.error(err);
-    message.textContent = "❌ Failed. Try again later.";
-    message.style.color = "#dc2626";
-  }
-});
 
 
 
@@ -82,9 +49,7 @@ I would like to request early access to GLOWVAI.
 Your Email:
 ${userEmail}
 
-Thank you,
-[Your Name]`;
-
+Thank you`;
 
   const mailtoLink = `mailto:${companyEmail}?subject=${encodeURIComponent(
     subject
